@@ -1,0 +1,44 @@
+#!/usr/bin/dkt
+# Пример использование созданного веб-языка
+# Название программы
+pragma = first
+# Описание переменных после слова var
+var
+# Блок переменных
+section1 = main
+section2 = about
+section3 = contact
+file1 = main.txt
+file2 = about.txt
+file3 = contact.txt
+top = top.txt
+links = links.txt
+bottom = bottom.txt
+tmp = empty
+emp = 
+# start означает начало программы
+start
+
+# Читаем файл, который записан в переменной top
+read = top
+# Читаем файл, который записан в переменной links
+read = links
+
+# Получаем главную переменную
+get tmp 1
+
+# Если она пуста (сравниваем с пустой переменной)
+if tmp emp
+# То выводим сообщение
+show = '<center>Выберите раздел</center>'
+
+if tmp section1
+read = file1
+
+if tmp section2
+read = file2
+
+if tmp section3
+read = file3
+
+stop
