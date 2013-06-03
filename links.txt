@@ -1,0 +1,1 @@
+<center><a href="index.pdx">INDEX</a> || <a href="index.pdx?main">main</a> || <a href="index.pdx?about">about</a> || <a href="index.pdx?contact">contact</a></center>
